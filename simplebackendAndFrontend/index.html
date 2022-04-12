@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Picture</title>
+</head>
+<body>
+    <h1>Welcome join and upload your private pictures – we value privacy of course.</h1>
+    <img src="/dasBildVonGeradeEben" alt="Bild von gerade eben" width="500" />
+
+    <form action="/createProfile" enctype="multipart/form-data" method="POST" style="border: 1px solid black; padding: 20px;"> 
+        <label>
+            Username: <input type="text" name="username" />
+        </label>
+        <br/>
+        <label>
+            Profile picture: <input type="file" name="profilePicture" />
+        </label>
+        <br/>
+        <br/>
+        <input type="submit" value="Create Your Profile"/>
+    </form>
+</body>
+</html>
