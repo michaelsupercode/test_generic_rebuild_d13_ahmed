@@ -18,6 +18,11 @@ app.use(express.json())
 
 app.use(express.static("uploads"))
 
+app.get("/", (_, res) => {
+    res.send("<h6>..it works so entirely fuckin well..:</h6>")
+})
+
+
 app.get("/users", (req, res) => {
     res.json(usersArray)
 })
